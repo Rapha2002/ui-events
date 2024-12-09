@@ -183,3 +183,33 @@ a:nth-of-type(1) {
   90% { transform: translate(-5px, 5px) rotate(-70deg); }
   100% { transform: translate(0, 0) rotate(0deg); }
 }
+
+
+
+
+
+.kleur {
+  animation-name: kleur;
+  animation: kleur 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: scale(1, 1);
+  backface-visibility: hidden;
+  perspective: 2000px;
+}
+
+@keyframes kleur {
+  10%, 90% {
+    background-color: aqua;
+  }
+  
+  20%, 80% {
+    background-color: tomato;
+  }
+
+  30%, 50%, 70% {
+    background-color: yellow;
+  }
+
+  40%, 60% {
+    background-color: yellowgreen;
+  }
+}

@@ -85,3 +85,20 @@ function dansje() {
 
 sprint_5.classList.toggle('dansje')
 }
+
+
+
+
+let fix = document.querySelector('a:nth-of-type(6)')
+
+
+
+fix.addEventListener('keydown', kleur)
+
+function kleur(a) {
+  if (a.which === 65)
+
+fix.classList.toggle('epilepsie')
+}
+
+
