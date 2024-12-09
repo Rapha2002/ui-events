@@ -81,3 +81,105 @@ a:nth-of-type(12) {
 
 
 /* Hieronder komen jouw animaties */
+a:nth-of-type(1) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--primary);
+  border-color: var(--secondary);
+}
+
+.shake {
+  animation-name: shake;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+.grow {
+  animation-name: grow;
+  animation: grow 1s cubic-bezier(.36,.07,.19,.97) both;
+  transform: scale(1, 1);
+  backface-visibility: hidden;
+  perspective: 2000px;
+}
+
+@keyframes grow {
+  10%, 90% {
+    transform: scale(2, 2);
+  }
+  
+
+
+
+}
+
+
+
+.epilepsie {
+  animation-name: epilepsie;
+  animation: epilepsie 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: scale(1, 1);
+  backface-visibility: hidden;
+  perspective: 2000px;
+}
+
+@keyframes epilepsie {
+  10%, 90% {
+    transform: scale(2, 0);
+  }
+  
+  20%, 80% {
+    transform: scale(1, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: scale(3, 3);
+  }
+
+  40%, 60% {
+    transform: scale(1, 1);
+  }
+}
+
+
+
+
+.dansje {
+  animation-name: dansje;
+  animation: dansje 2s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes dansje {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  30% { transform: translate(0, 0) rotate(0eg); }
+  40% { transform: translate(-5px, 5px) rotate(-5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  60% { transform: translate(5px, 5px) rotate(55deg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  90% { transform: translate(-5px, 5px) rotate(-70deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}

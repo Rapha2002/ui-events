@@ -1,6 +1,6 @@
 /*
-   De eerste interactie is al voor jullie uitgewerkt
-   Als je op het 12e linkje klikt (“Interaction”), springt deze omhoog
+    De eerste interactie is al voor jullie uitgewerkt
+    Als je op het 12e linkje klikt (“Interaction”), springt deze omhoog
 */
 
 // Stap 1: selecteer het 12e linkje, en sla deze op in een variabele
@@ -33,3 +33,55 @@ interaction.addEventListener('animationend', jumpHandler)
 
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
 // bibberLink.classList.toggle...
+
+let frontend = document.querySelector('a:nth-of-type(1)')
+
+
+
+frontend.addEventListener('click', shake)
+
+function shake() {
+
+frontend.classList.toggle('shake')
+}
+
+
+
+
+let design = document.querySelector('a:nth-of-type(2)')
+
+
+
+design.addEventListener('click', grow)
+
+function grow() {
+
+design.classList.toggle('grow')
+}
+
+
+
+let development = document.querySelector('a:nth-of-type(4)')
+
+
+
+development.addEventListener('click', epilepsie)
+
+function epilepsie() {
+
+development.classList.toggle('epilepsie')
+}
+
+
+
+
+let sprint_5 = document.querySelector('a:nth-of-type(5)')
+
+
+
+sprint_5.addEventListener('click', dansje)
+
+function dansje() {
+
+sprint_5.classList.toggle('dansje')
+}
